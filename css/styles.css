@@ -1,0 +1,30 @@
+:root {
+  --fs-primary: 1.8rem;
+  --color-dark-cyan: hsl(185, 75%, 39%);
+  --color-dark-des-blue: hsl(229, 23%, 23%);
+  --color-dark-gray-blue: hsl(227, 10%, 46%);
+  --color-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-dark-cyan);
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
