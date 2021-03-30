@@ -18,12 +18,16 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   min-width: 375px;
   background-color: var(--color-dark-cyan);
-  /* background-image: url(../images/bg-pattern-top.svg),
+  background-image: url(../images/bg-pattern-top.svg),
     url(../images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
-  background-position: top 120% left -90%, 170% -70%; */
+  background-position: right 36vw bottom 48vh, left 37vw top 47vh;
 }
 
 /* MAIN */
@@ -81,13 +85,13 @@ img {
   display: inline-block;
   font-size: var(--fs-primary);
   font-weight: bold;
-  padding: 5px;
+  padding: 4px;
   color: var(--color-dark-des-blue);
 }
 
 .profile .profile__age {
   display: inline-block;
-  padding: 5px;
+  padding: 4px;
   font-size: var(--fs-primary);
   color: var(--color-dark-gray-blue);
 }
@@ -99,8 +103,6 @@ img {
 }
 
 .stats {
-  /* position: relative;
-  bottom: 10px; */
   height: auto;
   display: flex;
   justify-content: space-evenly;
@@ -131,18 +133,26 @@ img {
 
 footer {
   position: fixed;
-  padding: 10px 10px 0px 10px;
+  padding-top: 12px;
   bottom: 0;
   width: 100%;
   height: 50px;
   text-align: center;
-  font-size: var(--fs-primary);
+  font-size: calc(var(--fs-primary) - 3px);
+  background-color: hsl(227deg 10% 46% / 35%);
+  color: var(--color-dark-des-blue);
 }
 
 footer p {
-  display: inline;
+  display: inline-block;
 }
 
 footer a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-dark-des-blue);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
