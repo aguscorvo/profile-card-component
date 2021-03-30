@@ -36,12 +36,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 330px;
-  max-width: 330px;
+  width: 335px;
+  max-width: 335px;
   height: 374px;
   margin: 150px auto;
   border-radius: 15px;
   background-color: white;
+  box-shadow: 5px 40px 61px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card__top {
